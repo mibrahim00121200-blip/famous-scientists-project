@@ -1,52 +1,113 @@
-# Famous Scientists Dataset
+# 🌟 Famous Scientists Dataset
 
-This project scrapes Wikipedia pages for famous scientists and creates a dataset containing their biographical information.
+A Python-based web scraping project that collects biographical information about famous scientists from Wikipedia and generates a structured dataset.
 
-## Files
+---
 
-- `scraper.py`: Scrapes Wikipedia pages for the listed scientists and saves text data to individual .txt files in the `scientists_data` folder.
-- `merge.py`: Combines the scraped text files into a single CSV dataset (`scientists_dataset.csv`).
-- `requirements.txt`: Lists the required Python packages.
-- `scientists_data/`: Folder containing individual text files for each scientist.
-- `scientists_dataset.csv`: The final dataset with columns: Scientist, Text, Length.
+## 📌 Overview
 
-## Scientists Included
+This project automates the process of extracting, cleaning, and organizing textual data of well-known scientists. The final output is a CSV dataset that can be used for data analysis, NLP tasks, or machine learning projects.
 
-- Albert Einstein
-- Isaac Newton
-- Marie Curie
-- Nikola Tesla
-- Galileo Galilei
-- Charles Darwin
-- Stephen Hawking
-- Ada Lovelace
-- Louis Pasteur
-- Michael Faraday
-- James Clerk Maxwell
-- Gregor Mendel
-- Niels Bohr
-- Richard Feynman
-- Carl Sagan
+---
 
-## Usage
+## 📁 Project Structure
 
-1. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+* **scraper.py**
+  Scrapes Wikipedia pages and saves cleaned text into individual `.txt` files.
 
-2. Run the scraper:
-   ```
-   python scraper.py
-   ```
+* **merge.py**
+  Combines all text files into a single dataset (`scientists_dataset.csv`).
 
-3. Run the merger:
-   ```
-   python merge.py
-   ```
+* **requirements.txt**
+  Contains required Python libraries.
 
-## Notes
+* **scientists_data/**
+  Folder with individual scientist text files.
 
-- The scraper includes a user-agent header to comply with Wikipedia's policies.
-- Text is cleaned to remove reference numbers like [1].
-- The dataset contains up to 30 paragraphs of introductory text from each scientist's Wikipedia page.
+* **scientists_dataset.csv**
+  Final dataset with columns:
+
+  * Scientist
+  * Text
+  * Length
+
+---
+
+## 👨‍🔬 Scientists Included
+
+Albert Einstein
+Isaac Newton
+Marie Curie
+Nikola Tesla
+Galileo Galilei
+Charles Darwin
+Stephen Hawking
+Ada Lovelace
+Louis Pasteur
+Michael Faraday
+James Clerk Maxwell
+Gregor Mendel
+Niels Bohr
+Richard Feynman
+Carl Sagan
+
+---
+
+## ⚙️ How to Run
+
+### 1️⃣ Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 2️⃣ Run scraper
+
+```
+python scraper.py
+```
+
+### 3️⃣ Generate dataset
+
+```
+python merge.py
+```
+
+---
+
+## 🧠 Features
+
+* Automated web scraping from Wikipedia
+* Text cleaning (removes references like `[1]`)
+* Structured dataset generation
+* Lightweight and easy to run
+
+---
+
+## 📝 Notes
+
+* Uses a custom User-Agent to follow Wikipedia policies
+* Extracts up to 30 paragraphs per scientist
+* Designed for educational and research purposes
+
+---
+
+## 🚀 Future Improvements
+
+* Add more scientists
+* Convert dataset into JSON format
+* Integrate NLP preprocessing (tokenization, stopword removal)
+* Build a simple GUI for interaction
+
+---
+
+## 👤 Author
+
+**Ibrahim**
+BS Artificial Intelligence Student
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
